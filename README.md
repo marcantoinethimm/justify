@@ -1,4 +1,4 @@
-#API Jutification de texte
+# API Jutification de texte
 
 Cette API permet la justification de texte via une authentification unique token. 
 Un utilisateur pourra s'enregistrer , et se connecter, et possède un quota de mots par jours (80 000).
