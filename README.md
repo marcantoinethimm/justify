@@ -22,9 +22,9 @@ L'application est codé avec `NodeJS` et utilise le framework `Express.js`.
     └── routes
     `
     
-`controlers` contient tout les fichiers avec la logic metier de l'application
+`controlers` contient tout les fichiers avec la logic metier de l'application.
 
-`routers` est le routeur Express qui permet d'associer la requête vers le bon controler et séparer la logic routing de la logique globale
+`routers` est le routeur Express qui permet d'associer la requête vers le bon controler et séparer la logic routing de la logique globale.
  
 `models` contient les schémas vers la base de donnée MongoDB.
 
@@ -32,7 +32,8 @@ L'application est codé avec `NodeJS` et utilise le framework `Express.js`.
 
 # REST API
 
-L'API REST est décrite si dessous
+L'API REST est décrite si dessous.
+
 Les liens peuvent être testé via la collection postman : [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/5e2fe2789ec8c56f4377)
 
 ## Justifier le texte
