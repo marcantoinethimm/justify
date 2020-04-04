@@ -20,7 +20,6 @@ exports.justifyText = (req, res, next) => {
   User.findOne({_id: req.body.userId})
     .then(user =>{
       if ((user.words_count + words.length) < 80000 ) {
-        console.log(req.body.userId)
         User.updateOne({ _id: req.body.userId }, { words_count: user.words_count + words.length })
         .then(()=> {
 
@@ -53,6 +52,7 @@ exports.justifyText = (req, res, next) => {
           }
 
           //Renvois de la variable text_justified contenan le texte justifié
+          //console.log(text_justified) //pour voir le texte justifié sur console.
           res.set('content-type', 'text/plain');
           res.status(201).json({
            text_justified,
