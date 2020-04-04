@@ -9,8 +9,6 @@ module.exports = (req, res, next) => {
     .then(user =>{
       //fix the time to 00h, 0 min , 0 sec
       user.date.setHours(0,0,0,0);
-      console.log(user.date);
-      console.log(dateNow);
       if (user.date < dateNow){
         User.updateOne({ _id: req.body.userId }, { words_count: 0, date: dateNow })
         .catch(error => res.status(400).json({ error }));
