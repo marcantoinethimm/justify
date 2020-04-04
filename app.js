@@ -30,4 +30,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/api/justify', justifyRoutes);
 app.use('/api/auth', userRoutes);
 
+//welcome message
+app.use('', (req, res, next) => {
+  res.status(200).json({ message: 'Bienvenue dans l\'application Justify ! Veuillez utiliser postman pour les requêtes : https://www.getpostman.com/collections/5e2fe2789ec8c56f4377',});
+});
+
 module.exports = app;
